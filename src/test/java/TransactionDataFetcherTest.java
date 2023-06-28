@@ -65,13 +65,13 @@ public class TransactionDataFetcherTest {
         assertEquals(expected, actualValue);
     }
 
-    @Test
+    @Test 
     void getTransactionsByBeneficiaryName() {
-        Map<String, Set<Transaction>> expectedValues = new HashMap<>();
-//        expectedValues.put("Luca Changretta", new HashSet<>().add(new Transaction()))
+        Integer expectedValue = 10;
         Map<String, Set<Transaction>> actualValue = transactionDataFetcher.getTransactionsByBeneficiaryName();
-        assertEquals(expectedValues, actualValue);
+        assertEquals(expectedValue, actualValue.size());
     }
+
 
     @Test
     void getUnsolvedIssueIds() {
